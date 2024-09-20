@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.drop:hover .menu {
+  opacity: 1;
+  transform: translateY(0);
+  display: block;
+}
+.menu {
+  opacity: 0;
+  display: none;
+  margin-top: -10px;
+  transform: translateY(2%);
+  transition: opacity 0.1s ease, transform 0.2s ease;
+}
+.submenu:hover .submenumenu {
+  opacity: 1;
+  transform: translateY(0);
+}
+.submenumenu {
+  opacity: 0;
+  transform: translateY(2%);
+  transition: opacity 0.1s ease, transform 0.2s ease;
+}
+.botm {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 2rem;
+}
